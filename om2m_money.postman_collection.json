@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "fbb618ca-2419-4ec6-89a8-20e10b461944",
+		"name": "om2m_money",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create_ae",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-M2M-Origin",
+						"value": "admin:admin",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml;ty=2",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<m2m:ae xmlns:m2m=\"http://www.onem2m.org/xml/protocols\" rn=\"Group\">\n    <api>Group</api>\n    <lbl>Location/Dcnlab</lbl>\n    <poa>http://127.0.0.1:1880/Group</poa>\n    <rr>True</rr>\n</m2m:ae>\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/~/in-cse",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"~",
+						"in-cse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_sub_in_Alice",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-M2M-Origin",
+						"value": "admin:admin",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml;ty=23",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<m2m:sub xmlns:m2m=\"http://www.onem2m.org/xml/protocols\" rn=\"SUBSCRIPTION_ALICE\">\n    <nu>http://127.0.0.1:8080/~/in-cse/in-name/Group</nu>\n    <nct>2</nct>\n</m2m:sub>\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/~/mn-cse/mn-name/user_Alice/Alice_group",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"~",
+						"mn-cse",
+						"mn-name",
+						"user_Alice",
+						"Alice_group"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_sub_in_Bob",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-M2M-Origin",
+						"value": "admin:admin",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml;ty=23",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<m2m:sub xmlns:m2m=\"http://www.onem2m.org/xml/protocols\" rn=\"SUBSCRIPTION_BOB\">\n    <nu>http://127.0.0.1:8080/~/in-cse/in-name/Group</nu>\n    <nct>2</nct>\n</m2m:sub>\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/~/mn-cse/mn-name/user_Bob/Bob_group",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"~",
+						"mn-cse",
+						"mn-name",
+						"user_Bob",
+						"Bob_group"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_container",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-M2M-Origin",
+						"value": "admin:admin",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml;ty=3",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<m2m:cnt xmlns:m2m=\"http://www.onem2m.org/xml/protocols\" rn=\"money\">\n</m2m:cnt>\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/~/in-cse/in-name/Group",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"~",
+						"in-cse",
+						"in-name",
+						"Group"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

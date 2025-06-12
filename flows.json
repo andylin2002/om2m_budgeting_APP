@@ -1,0 +1,1784 @@
+[
+    {
+        "id": "4fec910722902f4d",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c2ede4d9a7a3eafe",
+        "type": "inject",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 80,
+        "wires": [
+            [
+                "f75608dc3f09fbc1"
+            ]
+        ]
+    },
+    {
+        "id": "f75608dc3f09fbc1",
+        "type": "Application",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "platform": "3f71b8a39776eeda",
+        "name1": "c6f90b6fedc37d47",
+        "pointOfAccess": "",
+        "obixAnnounce": false,
+        "width": 0,
+        "options": [
+            {
+                "label": "Location",
+                "value": "DCNLAB"
+            }
+        ],
+        "cntInstance": "",
+        "x": 390,
+        "y": 80,
+        "wires": [
+            [
+                "3147a244b8adf939"
+            ]
+        ]
+    },
+    {
+        "id": "3147a244b8adf939",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "msg.payload",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "0e279f7fb1919b39",
+        "type": "inject",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 160,
+        "wires": [
+            [
+                "6ae0e1c27329976e"
+            ]
+        ]
+    },
+    {
+        "id": "6ae0e1c27329976e",
+        "type": "Container",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "platform": "3f71b8a39776eeda",
+        "name1": "c6f90b6fedc37d47",
+        "viewtype": "autre",
+        "viewunid1": "money",
+        "x": 380,
+        "y": 160,
+        "wires": [
+            [
+                "72df4e3390f587b5"
+            ]
+        ]
+    },
+    {
+        "id": "72df4e3390f587b5",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "msg.payload",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "1c3382e12d5e2380",
+        "type": "comment",
+        "z": "4fec910722902f4d",
+        "name": "Alice personal",
+        "info": "",
+        "x": 130,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "d6baae9595c30bca",
+        "type": "inject",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1200,
+        "y": 160,
+        "wires": [
+            [
+                "7680aa061653f81d"
+            ]
+        ]
+    },
+    {
+        "id": "7680aa061653f81d",
+        "type": "Container",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "platform": "3f71b8a39776eeda",
+        "name1": "c6f90b6fedc37d47",
+        "viewtype": "autre",
+        "viewunid1": "Alice_group",
+        "x": 1380,
+        "y": 160,
+        "wires": [
+            [
+                "447193142fce11ac"
+            ]
+        ]
+    },
+    {
+        "id": "447193142fce11ac",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "msg.payload",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1610,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "d8e6ad747a7315d4",
+        "type": "http in",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "url": "/sensorPersonal_Alice",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 380,
+        "wires": [
+            [
+                "da1ed8a7402f4bad"
+            ]
+        ]
+    },
+    {
+        "id": "da1ed8a7402f4bad",
+        "type": "function",
+        "z": "4fec910722902f4d",
+        "name": "set payload and headers",
+        "func": "/*jshint multistr: true */\nvar data = '<m2m:cin xmlns:m2m=\"http://www.onem2m.org/xml/protocols\">\\\n        <cnf>message</cnf>\\\n        <con>\\\n          &lt;obj&gt;\\\n                &lt;str name=&quot;money&quot; val=&quot;'+ msg.payload.money + '&quot;/&gt;\\\n                &lt;str name=&quot;description&quot; val=&quot;'+ msg.payload.description + '&quot;/&gt;\\\n          &lt;/obj&gt;\\\n        </con>\\\n</m2m:cin>';\n\nmsg.payload = data;\nmsg.headers = {};\nmsg.headers['X-M2M-Origin'] = 'admin:admin';\nmsg.headers['Content-Type'] = 'application/xml;ty=4';\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 380,
+        "wires": [
+            [
+                "9ef5c225a73dafb1"
+            ]
+        ]
+    },
+    {
+        "id": "9ef5c225a73dafb1",
+        "type": "http request",
+        "z": "4fec910722902f4d",
+        "name": "post to mn-cse",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/user_Alice/money",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 700,
+        "y": 380,
+        "wires": [
+            [
+                "c2adbe61d1e311f1",
+                "fd3ac58e532423ae"
+            ]
+        ]
+    },
+    {
+        "id": "c2adbe61d1e311f1",
+        "type": "http response",
+        "z": "4fec910722902f4d",
+        "name": "response",
+        "statusCode": "",
+        "headers": {},
+        "x": 880,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "fd3ac58e532423ae",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "msg.statusCode",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "67192d898a8ad6f7",
+        "type": "comment",
+        "z": "4fec910722902f4d",
+        "name": "Alice group",
+        "info": "",
+        "x": 1120,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "5088cb6a438a2c05",
+        "type": "http in",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "url": "/sensorGroup_Alice",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1190,
+        "y": 380,
+        "wires": [
+            [
+                "39135eeacb0e77da"
+            ]
+        ]
+    },
+    {
+        "id": "39135eeacb0e77da",
+        "type": "function",
+        "z": "4fec910722902f4d",
+        "name": "set payload and headers",
+        "func": "/*jshint multistr: true */\nvar data = '<m2m:cin xmlns:m2m=\"http://www.onem2m.org/xml/protocols\">\\\n        <cnf>message</cnf>\\\n        <con>\\\n          &lt;obj&gt;\\\n                &lt;str name=&quot;money&quot; val=&quot;'+ msg.payload.money + '&quot;/&gt;\\\n                &lt;str name=&quot;description&quot; val=&quot;'+ msg.payload.description + '&quot;/&gt;\\\n                &lt;str name=&quot;sender&quot; val=&quot;'+ msg.payload.sender + '&quot;/&gt;\\\n          &lt;/obj&gt;\\\n        </con>\\\n</m2m:cin>';\n\nmsg.payload = data;\nmsg.headers = {};\nmsg.headers['X-M2M-Origin'] = 'admin:admin';\nmsg.headers['Content-Type'] = 'application/xml;ty=4';\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1470,
+        "y": 380,
+        "wires": [
+            [
+                "64dd1b4bf4726b17"
+            ]
+        ]
+    },
+    {
+        "id": "64dd1b4bf4726b17",
+        "type": "http request",
+        "z": "4fec910722902f4d",
+        "name": "post to mn-cse",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/user_Alice/Alice_group",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1720,
+        "y": 380,
+        "wires": [
+            [
+                "68781d402fb76b90",
+                "c348d99f9dc7e32a"
+            ]
+        ]
+    },
+    {
+        "id": "c348d99f9dc7e32a",
+        "type": "http response",
+        "z": "4fec910722902f4d",
+        "name": "response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1900,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "68781d402fb76b90",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "msg.statusCode",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1880,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "4b747ad02db02ece",
+        "type": "http request",
+        "z": "4fec910722902f4d",
+        "name": "get from mn-cse",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/user_Alice/money?rcn=4",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "X-M2M-Origin",
+                "valueType": "other",
+                "valueValue": "admin:admin"
+            },
+            {
+                "keyType": "other",
+                "keyValue": "Accept",
+                "valueType": "other",
+                "valueValue": "application/xml"
+            }
+        ],
+        "x": 320,
+        "y": 680,
+        "wires": [
+            [
+                "a85abf40137e41e7",
+                "a24cb567e3ee692e"
+            ]
+        ]
+    },
+    {
+        "id": "6002dd85fc7288d0",
+        "type": "http in",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "url": "/get_person_Alice",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 680,
+        "wires": [
+            [
+                "4b747ad02db02ece"
+            ]
+        ]
+    },
+    {
+        "id": "a24cb567e3ee692e",
+        "type": "xml",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 550,
+        "y": 680,
+        "wires": [
+            [
+                "4c0623280b5a9a25"
+            ]
+        ]
+    },
+    {
+        "id": "4c0623280b5a9a25",
+        "type": "function",
+        "z": "4fec910722902f4d",
+        "name": "person function 1",
+        "func": "var cins = msg.payload[\"m2m:cnt\"][\"m2m:cin\"];\nvar datePrefix = msg.req.query.date;  // 例如 \"20250603\"\nvar cons = [];\n\nfor (var i = 0; i < cins.length; i++) {\n    var lt = cins[i].lt[0];\n    if (lt.startsWith(datePrefix)) {\n        cons.push(cins[i].con[0]);  // 儲存 con[0]（還是 XML 字串）\n    }\n}\n\nif (cons.length === 0) {\n    msg.payload = \"No data found for date \" + datePrefix;\n    msg.headers = { \"Content-Type\": \"text/plain\" };\n    return msg;\n}\n\n// 存下日期和 con 陣列給下一步使用\nflow.set(\"current_lt\", datePrefix);\nmsg.payload = cons;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 680,
+        "wires": [
+            [
+                "9f937dbc7a4629ae",
+                "730f244b7bb6c6cd"
+            ]
+        ]
+    },
+    {
+        "id": "e076e24b6292ba45",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "msg.payload",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1870,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "552db4973dcb5cae",
+        "type": "http response",
+        "z": "4fec910722902f4d",
+        "name": "response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1840,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "a85abf40137e41e7",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "debug 25",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "a3da997a58360ffd",
+        "type": "xml",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 1050,
+        "y": 680,
+        "wires": [
+            [
+                "8281f14f2c175750"
+            ]
+        ]
+    },
+    {
+        "id": "8281f14f2c175750",
+        "type": "function",
+        "z": "4fec910722902f4d",
+        "name": "person function 2",
+        "func": "var strList = msg.payload.obj.str;\nvar money = \"\";\nvar description = \"\";\n\nfor (var i = 0; i < strList.length; i++) {\n    var item = strList[i].$;\n    if (item.name === \"money\") {\n        money = item.val;\n    } else if (item.name === \"description\") {\n        description = item.val;\n    }\n}\n\nvar date = flow.get(\"current_lt\") || \"unknown\";\n\nmsg.payload = date + \": $\" + money + \", \" + description;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1250,
+        "y": 680,
+        "wires": [
+            [
+                "88a07f3c722b3e86"
+            ]
+        ]
+    },
+    {
+        "id": "9f937dbc7a4629ae",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "debug 26",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "730f244b7bb6c6cd",
+        "type": "split",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 910,
+        "y": 680,
+        "wires": [
+            [
+                "a3da997a58360ffd"
+            ]
+        ]
+    },
+    {
+        "id": "88a07f3c722b3e86",
+        "type": "join",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": "false",
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "x": 1450,
+        "y": 660,
+        "wires": [
+            [
+                "530f9bd80d58d342"
+            ]
+        ]
+    },
+    {
+        "id": "530f9bd80d58d342",
+        "type": "function",
+        "z": "4fec910722902f4d",
+        "name": "person function 3",
+        "func": "var lines = msg.payload;  // 直接是字串陣列\nvar total = 0;\nvar outputLines = [];\n\nfor (var i = 0; i < lines.length; i++) {\n    var line = lines[i];\n    var match = line.match(/\\$(\\d+),/);\n    if (match && match[1]) {\n        total += parseInt(match[1]);\n        var formatted = line.replace(/^.*: /, \"\");\n        outputLines.push(formatted);\n    }\n}\n\nmsg.payload = \"Total: $\" + total + \"\\n\" + outputLines.join(\"\\n\");\nmsg.headers = { \"Content-Type\": \"text/plain\" };\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1610,
+        "y": 660,
+        "wires": [
+            [
+                "552db4973dcb5cae",
+                "e076e24b6292ba45"
+            ]
+        ]
+    },
+    {
+        "id": "64a6fcadc0ff2a53",
+        "type": "inject",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 1120,
+        "wires": [
+            [
+                "1f6f694c7dda57d4"
+            ]
+        ]
+    },
+    {
+        "id": "1f6f694c7dda57d4",
+        "type": "Application",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "platform": "3f71b8a39776eeda",
+        "name1": "8224de365a13b814",
+        "pointOfAccess": "",
+        "obixAnnounce": false,
+        "width": 0,
+        "options": [
+            {
+                "label": "Location",
+                "value": "DCNLAB"
+            }
+        ],
+        "cntInstance": "",
+        "x": 390,
+        "y": 1120,
+        "wires": [
+            [
+                "78354e43587f84e4"
+            ]
+        ]
+    },
+    {
+        "id": "78354e43587f84e4",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "msg.payload",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "665028563bf97f38",
+        "type": "inject",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 1200,
+        "wires": [
+            [
+                "9708af397602cf30"
+            ]
+        ]
+    },
+    {
+        "id": "9708af397602cf30",
+        "type": "Container",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "platform": "3f71b8a39776eeda",
+        "name1": "8224de365a13b814",
+        "viewtype": "autre",
+        "viewunid1": "money",
+        "x": 380,
+        "y": 1200,
+        "wires": [
+            [
+                "21d922f94348f216"
+            ]
+        ]
+    },
+    {
+        "id": "21d922f94348f216",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "msg.payload",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "68878a959c49ad5b",
+        "type": "inject",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1160,
+        "y": 1140,
+        "wires": [
+            [
+                "5b1f99cfb43b93e5"
+            ]
+        ]
+    },
+    {
+        "id": "5b1f99cfb43b93e5",
+        "type": "Container",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "platform": "3f71b8a39776eeda",
+        "name1": "8224de365a13b814",
+        "viewtype": "autre",
+        "viewunid1": "Bob_group",
+        "x": 1340,
+        "y": 1140,
+        "wires": [
+            [
+                "8b6d5eb33032aeb5"
+            ]
+        ]
+    },
+    {
+        "id": "8b6d5eb33032aeb5",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "msg.payload",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1570,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "ad79eb0d5ead5d59",
+        "type": "comment",
+        "z": "4fec910722902f4d",
+        "name": "Bob personal",
+        "info": "",
+        "x": 130,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "838a493a6d3b1603",
+        "type": "comment",
+        "z": "4fec910722902f4d",
+        "name": "Bob group",
+        "info": "",
+        "x": 1040,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "e6b77caf5510cb18",
+        "type": "http in",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "url": "/sensorPersonal_Bob",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 1420,
+        "wires": [
+            [
+                "3166550b2f0a8d84"
+            ]
+        ]
+    },
+    {
+        "id": "3166550b2f0a8d84",
+        "type": "function",
+        "z": "4fec910722902f4d",
+        "name": "set payload and headers",
+        "func": "/*jshint multistr: true */\nvar data = '<m2m:cin xmlns:m2m=\"http://www.onem2m.org/xml/protocols\">\\\n        <cnf>message</cnf>\\\n        <con>\\\n          &lt;obj&gt;\\\n                &lt;str name=&quot;money&quot; val=&quot;'+ msg.payload.money + '&quot;/&gt;\\\n                &lt;str name=&quot;description&quot; val=&quot;'+ msg.payload.description + '&quot;/&gt;\\\n          &lt;/obj&gt;\\\n        </con>\\\n</m2m:cin>';\n\nmsg.payload = data;\nmsg.headers = {};\nmsg.headers['X-M2M-Origin'] = 'admin:admin';\nmsg.headers['Content-Type'] = 'application/xml;ty=4';\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 1420,
+        "wires": [
+            [
+                "5dd472b7281bce4f"
+            ]
+        ]
+    },
+    {
+        "id": "5dd472b7281bce4f",
+        "type": "http request",
+        "z": "4fec910722902f4d",
+        "name": "post to mn-cse",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/user_Bob/money",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 680,
+        "y": 1420,
+        "wires": [
+            [
+                "cdb866c61ccbfd48",
+                "f97f8f46923d75f5"
+            ]
+        ]
+    },
+    {
+        "id": "cdb866c61ccbfd48",
+        "type": "http response",
+        "z": "4fec910722902f4d",
+        "name": "response",
+        "statusCode": "",
+        "headers": {},
+        "x": 860,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "f97f8f46923d75f5",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "msg.statusCode",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "c19d9fa9f6ab98ad",
+        "type": "http in",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "url": "/sensorGroup_Bob",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1110,
+        "y": 1360,
+        "wires": [
+            [
+                "6ea06b1a493d200d"
+            ]
+        ]
+    },
+    {
+        "id": "6ea06b1a493d200d",
+        "type": "function",
+        "z": "4fec910722902f4d",
+        "name": "set payload and headers",
+        "func": "/*jshint multistr: true */\nvar data = '<m2m:cin xmlns:m2m=\"http://www.onem2m.org/xml/protocols\">\\\n        <cnf>message</cnf>\\\n        <con>\\\n          &lt;obj&gt;\\\n                &lt;str name=&quot;money&quot; val=&quot;'+ msg.payload.money + '&quot;/&gt;\\\n                &lt;str name=&quot;description&quot; val=&quot;'+ msg.payload.description + '&quot;/&gt;\\\n                &lt;str name=&quot;sender&quot; val=&quot;'+ msg.payload.sender + '&quot;/&gt;\\\n          &lt;/obj&gt;\\\n        </con>\\\n</m2m:cin>';\n\nmsg.payload = data;\nmsg.headers = {};\nmsg.headers['X-M2M-Origin'] = 'admin:admin';\nmsg.headers['Content-Type'] = 'application/xml;ty=4';\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1390,
+        "y": 1360,
+        "wires": [
+            [
+                "6930fdbe393181c4"
+            ]
+        ]
+    },
+    {
+        "id": "6930fdbe393181c4",
+        "type": "http request",
+        "z": "4fec910722902f4d",
+        "name": "post to mn-cse",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/user_Bob/Bob_group",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1640,
+        "y": 1360,
+        "wires": [
+            [
+                "e5ae7282b92eb0e6",
+                "eaddc3802a82d34e"
+            ]
+        ]
+    },
+    {
+        "id": "e5ae7282b92eb0e6",
+        "type": "http response",
+        "z": "4fec910722902f4d",
+        "name": "response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1820,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "eaddc3802a82d34e",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "msg.statusCode",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1800,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "85f2a2a5b432f8d5",
+        "type": "http request",
+        "z": "4fec910722902f4d",
+        "name": "get from mn-cse",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8282/~/mn-cse/mn-name/user_Bob/money?rcn=4",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "X-M2M-Origin",
+                "valueType": "other",
+                "valueValue": "admin:admin"
+            },
+            {
+                "keyType": "other",
+                "keyValue": "Accept",
+                "valueType": "other",
+                "valueValue": "application/xml"
+            }
+        ],
+        "x": 340,
+        "y": 1620,
+        "wires": [
+            [
+                "843d7991204a7ad6",
+                "c026fec6a8f94e07"
+            ]
+        ]
+    },
+    {
+        "id": "0d06f76258ed670e",
+        "type": "http in",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "url": "/get_person_Bob",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 1620,
+        "wires": [
+            [
+                "85f2a2a5b432f8d5"
+            ]
+        ]
+    },
+    {
+        "id": "c026fec6a8f94e07",
+        "type": "xml",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 570,
+        "y": 1620,
+        "wires": [
+            [
+                "e96affaaeee70975"
+            ]
+        ]
+    },
+    {
+        "id": "e96affaaeee70975",
+        "type": "function",
+        "z": "4fec910722902f4d",
+        "name": "person function 1",
+        "func": "var cins = msg.payload[\"m2m:cnt\"][\"m2m:cin\"];\nvar datePrefix = msg.req.query.date;  // 例如 \"20250603\"\nvar cons = [];\n\nfor (var i = 0; i < cins.length; i++) {\n    var lt = cins[i].lt[0];\n    if (lt.startsWith(datePrefix)) {\n        cons.push(cins[i].con[0]);  // 儲存 con[0]（還是 XML 字串）\n    }\n}\n\nif (cons.length === 0) {\n    msg.payload = \"No data found for date \" + datePrefix;\n    msg.headers = { \"Content-Type\": \"text/plain\" };\n    return msg;\n}\n\n// 存下日期和 con 陣列給下一步使用\nflow.set(\"current_lt\", datePrefix);\nmsg.payload = cons;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 1620,
+        "wires": [
+            [
+                "bc99513ea2de1f45",
+                "da317c814157f4b2"
+            ]
+        ]
+    },
+    {
+        "id": "9ecb559afeb85a1c",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "msg.payload",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1890,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "4eff9ad78f76e750",
+        "type": "http response",
+        "z": "4fec910722902f4d",
+        "name": "response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1860,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "5414137fcc3447c6",
+        "type": "http request",
+        "z": "4fec910722902f4d",
+        "name": "get from in-cse",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8080/~/in-cse/in-name/Group/money?rcn=4",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "X-M2M-Origin",
+                "valueType": "other",
+                "valueValue": "admin:admin"
+            },
+            {
+                "keyType": "other",
+                "keyValue": "Accept",
+                "valueType": "other",
+                "valueValue": "application/xml"
+            }
+        ],
+        "x": 360,
+        "y": 2580,
+        "wires": [
+            [
+                "c65e2d4da30e1cd4",
+                "f82fd14ca6854030"
+            ]
+        ]
+    },
+    {
+        "id": "5c4bfc6886bb0b8f",
+        "type": "http in",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "url": "/get_group",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 2580,
+        "wires": [
+            [
+                "5414137fcc3447c6"
+            ]
+        ]
+    },
+    {
+        "id": "843d7991204a7ad6",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "debug 32",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "6c3881757d5d4d41",
+        "type": "xml",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 1070,
+        "y": 1620,
+        "wires": [
+            [
+                "661caf21cad7191c"
+            ]
+        ]
+    },
+    {
+        "id": "661caf21cad7191c",
+        "type": "function",
+        "z": "4fec910722902f4d",
+        "name": "person function 2",
+        "func": "var strList = msg.payload.obj.str;\nvar money = \"\";\nvar description = \"\";\n\nfor (var i = 0; i < strList.length; i++) {\n    var item = strList[i].$;\n    if (item.name === \"money\") {\n        money = item.val;\n    } else if (item.name === \"description\") {\n        description = item.val;\n    }\n}\n\nvar date = flow.get(\"current_lt\") || \"unknown\";\n\nmsg.payload = date + \": $\" + money + \", \" + description;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 1620,
+        "wires": [
+            [
+                "8a18f4552efdb45a"
+            ]
+        ]
+    },
+    {
+        "id": "bc99513ea2de1f45",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "debug 33",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "da317c814157f4b2",
+        "type": "split",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 930,
+        "y": 1620,
+        "wires": [
+            [
+                "6c3881757d5d4d41"
+            ]
+        ]
+    },
+    {
+        "id": "8a18f4552efdb45a",
+        "type": "join",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": "false",
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "x": 1470,
+        "y": 1600,
+        "wires": [
+            [
+                "4fe677e3b25a75be"
+            ]
+        ]
+    },
+    {
+        "id": "4fe677e3b25a75be",
+        "type": "function",
+        "z": "4fec910722902f4d",
+        "name": "person function 3",
+        "func": "var lines = msg.payload;  // 直接是字串陣列\nvar total = 0;\nvar outputLines = [];\n\nfor (var i = 0; i < lines.length; i++) {\n    var line = lines[i];\n    var match = line.match(/\\$(\\d+),/);\n    if (match && match[1]) {\n        total += parseInt(match[1]);\n        var formatted = line.replace(/^.*: /, \"\");\n        outputLines.push(formatted);\n    }\n}\n\nmsg.payload = \"Total: $\" + total + \"\\n\" + outputLines.join(\"\\n\");\nmsg.headers = { \"Content-Type\": \"text/plain\" };\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1630,
+        "y": 1600,
+        "wires": [
+            [
+                "9ecb559afeb85a1c",
+                "4eff9ad78f76e750"
+            ]
+        ]
+    },
+    {
+        "id": "f82fd14ca6854030",
+        "type": "xml",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 590,
+        "y": 2580,
+        "wires": [
+            [
+                "0d0389fc578b334a"
+            ]
+        ]
+    },
+    {
+        "id": "0d0389fc578b334a",
+        "type": "function",
+        "z": "4fec910722902f4d",
+        "name": "group function 1",
+        "func": "var cins = msg.payload[\"m2m:cnt\"][\"m2m:cin\"];\nvar datePrefix = msg.req.query.date;  // e.g. \"20250609\"\nvar cons = [];\n\nfor (var i = 0; i < cins.length; i++) {\n    var lt = cins[i].lt[0];\n    if (lt.startsWith(datePrefix)) {\n        cons.push(cins[i].con[0]);  // 還是 XML 格式\n    }\n}\n\nif (cons.length === 0) {\n    msg.payload = \"No data found for date \" + datePrefix;\n    msg.headers = { \"Content-Type\": \"text/plain\" };\n    return msg;\n}\n\nflow.set(\"current_lt\", datePrefix);\nmsg.payload = cons;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 2580,
+        "wires": [
+            [
+                "c1bc1d8731928d8c",
+                "f2702515a26b5049"
+            ]
+        ]
+    },
+    {
+        "id": "499830e7285d956e",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "msg.payload",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1830,
+        "y": 2520,
+        "wires": []
+    },
+    {
+        "id": "771da764f9c3eadc",
+        "type": "http response",
+        "z": "4fec910722902f4d",
+        "name": "response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1820,
+        "y": 2560,
+        "wires": []
+    },
+    {
+        "id": "c65e2d4da30e1cd4",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "debug 34",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 2500,
+        "wires": []
+    },
+    {
+        "id": "b8ff0ffc9155bf05",
+        "type": "xml",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 1090,
+        "y": 2580,
+        "wires": [
+            [
+                "e0271f6f2d12d78d"
+            ]
+        ]
+    },
+    {
+        "id": "e0271f6f2d12d78d",
+        "type": "function",
+        "z": "4fec910722902f4d",
+        "name": "group function 2",
+        "func": "var strList = msg.payload.obj.str;\n\nvar sender = null;\nvar money = null;\n\nfor (var i = 0; i < strList.length; i++) {\n    var item = strList[i].$;\n    if (item.name === \"money\") {\n        money = parseFloat(item.val);\n    } else if (item.name === \"sender\") {\n        try {\n            sender = JSON.parse(item.val);  // 處理 \"\\\"Alice\\\"\"\n        } catch (e) {\n            sender = item.val.replace(/\"/g, '');\n        }\n    }\n}\n\nif (!money || !sender) {\n    return null;\n}\n\nmsg.payload = {\n    money: money,\n    sender: sender\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 2580,
+        "wires": [
+            [
+                "444ea2f35db4c47c",
+                "6e2d7f10a58c3de1"
+            ]
+        ]
+    },
+    {
+        "id": "c1bc1d8731928d8c",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "debug 35",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 2500,
+        "wires": []
+    },
+    {
+        "id": "f2702515a26b5049",
+        "type": "split",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 950,
+        "y": 2580,
+        "wires": [
+            [
+                "b8ff0ffc9155bf05"
+            ]
+        ]
+    },
+    {
+        "id": "444ea2f35db4c47c",
+        "type": "join",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "mode": "auto",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": "false",
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "x": 1450,
+        "y": 2560,
+        "wires": [
+            [
+                "9a7cdc43159137d8"
+            ]
+        ]
+    },
+    {
+        "id": "9a7cdc43159137d8",
+        "type": "function",
+        "z": "4fec910722902f4d",
+        "name": "group function 3",
+        "func": "var records = msg.payload;\nvar querySender = msg.req && msg.req.query && msg.req.query.sender;\n\nvar total = 0;\nvar perPerson = {};\n\nfor (var i = 0; i < records.length; i++) {\n    var rec = records[i];\n    total += rec.money;\n\n    if (!perPerson[rec.sender]) {\n        perPerson[rec.sender] = 0;\n    }\n    perPerson[rec.sender] += rec.money;\n}\n\nvar names = Object.keys(perPerson);\nvar avg = total / names.length;\n\n// ✅ 查詢特定 sender\nif (querySender) {\n    if (!perPerson[querySender]) {\n        msg.payload = \"❌ 查無使用者 \" + querySender;\n        msg.headers = { \"Content-Type\": \"text/plain\" };\n        return msg;\n    }\n\n    var paid = perPerson[querySender];\n    var balance = +(paid - avg).toFixed(2);\n    var action = balance > 0 ? \"拿回\" : \"需補\";\n    var absBalance = Math.abs(balance).toFixed(2);\n\n    msg.payload =\n        `paid: $ ${paid.toFixed(2)}\\n` +\n        `avg: $ ${avg.toFixed(2)}\\n` +\n        `balance: $ ${balance.toFixed(2)}\\n` +\n        `action: $ ${action}${absBalance}`;\n    msg.headers = { \"Content-Type\": \"text/plain\" };\n    return msg;\n}\n\n// ✅ 顯示所有人（未帶 sender）\nvar result = names.map(name => {\n    var paid = perPerson[name];\n    var balance = +(paid - avg).toFixed(2);\n    var action = balance > 0 ? \"拿回\" : \"需補\";\n    var absBalance = Math.abs(balance).toFixed(2);\n    return `${name}:\\npaid: $ ${paid.toFixed(2)}\\navg: $ ${avg.toFixed(2)}\\nbalance: $ ${balance.toFixed(2)}\\naction: $ ${action}${absBalance}\\n`;\n});\n\nmsg.payload = result.join(\"\\n----------------\\n\");\nmsg.headers = { \"Content-Type\": \"text/plain\" };\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1600,
+        "y": 2560,
+        "wires": [
+            [
+                "499830e7285d956e",
+                "771da764f9c3eadc"
+            ]
+        ]
+    },
+    {
+        "id": "6e2d7f10a58c3de1",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "debug 36",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1440,
+        "y": 2500,
+        "wires": []
+    },
+    {
+        "id": "9147ad250e0d2201",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "debug 23",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1540,
+        "y": 2140,
+        "wires": []
+    },
+    {
+        "id": "4b2d2b90d4a6e43d",
+        "type": "comment",
+        "z": "4fec910722902f4d",
+        "name": "Group",
+        "info": "",
+        "x": 170,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "f33fd7e16eaab12a",
+        "type": "http in",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "url": "/Group",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 2140,
+        "wires": [
+            [
+                "313ab37cb4edc879",
+                "dbb500cdfdfa4afa"
+            ]
+        ]
+    },
+    {
+        "id": "313ab37cb4edc879",
+        "type": "xml",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 530,
+        "y": 2140,
+        "wires": [
+            [
+                "b1d20813f0759fdd"
+            ]
+        ]
+    },
+    {
+        "id": "dbb500cdfdfa4afa",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "debug 22",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 2240,
+        "wires": []
+    },
+    {
+        "id": "b1d20813f0759fdd",
+        "type": "function",
+        "z": "4fec910722902f4d",
+        "name": "get state",
+        "func": "var data = msg.payload[\"m2m:sgn\"].nev[0].rep[0][\"m2m:cin\"][0].con[0];\nmsg.payload = data\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 2140,
+        "wires": [
+            [
+                "e29ec99fd0c6b13f"
+            ]
+        ]
+    },
+    {
+        "id": "77587f075dd0435e",
+        "type": "function",
+        "z": "4fec910722902f4d",
+        "name": "set object",
+        "func": "var New = { money: null, description: null, sender: null};\nNew.money = msg.payload.obj.str[0].$.val;\nNew.description = msg.payload.obj.str[1].$.val;\nNew.sender = msg.payload.obj.str[2].$.val;\nmsg.payload = New;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 2140,
+        "wires": [
+            [
+                "9f6a3410d29a73a0"
+            ]
+        ]
+    },
+    {
+        "id": "9f6a3410d29a73a0",
+        "type": "function",
+        "z": "4fec910722902f4d",
+        "name": "set payload and headers",
+        "func": "/*jshint multistr: true */\nvar data = '<m2m:cin xmlns:m2m=\"http://www.onem2m.org/xml/protocols\">\\\n        <cnf>message</cnf>\\\n        <con>\\\n          &lt;obj&gt;\\\n                &lt;str name=&quot;money&quot; val=&quot;'+ msg.payload.money + '&quot;/&gt;\\\n                &lt;str name=&quot;description&quot; val=&quot;'+ msg.payload.description + '&quot;/&gt;\\\n                &lt;str name=&quot;sender&quot; val=&quot;'+ msg.payload.sender + '&quot;/&gt;\\\n          &lt;/obj&gt;\\\n        </con>\\\n</m2m:cin>';\n\nmsg.payload = data;\nmsg.headers = {};\nmsg.headers['X-M2M-Origin'] = 'admin:admin';\nmsg.headers['Content-Type'] = 'application/xml;ty=4';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 2140,
+        "wires": [
+            [
+                "9147ad250e0d2201",
+                "f49283c49f77461c"
+            ]
+        ]
+    },
+    {
+        "id": "f49283c49f77461c",
+        "type": "http request",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8080/~/in-cse/in-name/Group/money",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1110,
+        "y": 2300,
+        "wires": [
+            [
+                "2d341f58f10e9f4c",
+                "cf1160a15cd70d64"
+            ]
+        ]
+    },
+    {
+        "id": "2d341f58f10e9f4c",
+        "type": "http response",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1330,
+        "y": 2300,
+        "wires": []
+    },
+    {
+        "id": "cf1160a15cd70d64",
+        "type": "debug",
+        "z": "4fec910722902f4d",
+        "name": "debug 24",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1340,
+        "y": 2340,
+        "wires": []
+    },
+    {
+        "id": "e29ec99fd0c6b13f",
+        "type": "xml",
+        "z": "4fec910722902f4d",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 890,
+        "y": 2140,
+        "wires": [
+            [
+                "77587f075dd0435e"
+            ]
+        ]
+    },
+    {
+        "id": "3f71b8a39776eeda",
+        "type": "xN_CSE",
+        "platform": "mn-cse",
+        "URLBase": "http://127.0.0.1:8282/~/mn-cse/mn-name",
+        "user": "admin",
+        "password": "admin"
+    },
+    {
+        "id": "c6f90b6fedc37d47",
+        "type": "AE",
+        "appId": "user_Alice"
+    },
+    {
+        "id": "8224de365a13b814",
+        "type": "AE",
+        "appId": "user_Bob"
+    }
+]
