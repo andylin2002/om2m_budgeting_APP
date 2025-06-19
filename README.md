@@ -3,7 +3,7 @@
 ## Introduction
 "This user-friendly budgeting application aims to cultivate consistent financial tracking habits, minimizing the time commitment often associated with complex accounting apps and ensuring that managing finances does not impede one's enjoyment of life."
 
-## Usage
+## 🚀 Usage
 ### 1. Open your Om2m MN-CSE and IN-CSE
 MN-CSE
 ```
@@ -58,5 +58,22 @@ After that:
 </div>
 
 ### 4. APP
+Before uploading, users will need to enter an amount and a description. Once these are entered, pressing the Upload button will send the record to the Middle Node (MN). Alice's and Bob's records will be stored in separate containers on the MN.
+![](./readme_images/personal_post.png)
 
+To review past spending, simply enter a date (e.g., 20250522) to retrieve that day's transaction records.
+![](./readme_images/personal_get.png)
 
+Next is Group Mode. The goal is that when users switch to Group Mode, every amount entered will be treated as a "group expense."\
+When Alice and Bob, each in Group Mode, upload these expenses to their respective Middle Nodes (MNs), the system will use a subscription mechanism to transfer this data to the Infrastructure Node (IN). However, each of their MNs will only be able to see the expenses they personally uploaded.
+![](./readme_images/group_post.png)
+
+Later, if either party wants to see the total group spending and balance for a specific day, they just need to enter that date in the app. This will show them how much they still need to pay or receive.
+![](./readme_images/group_get.png)
+
+## 👤 Author
+Developed by Tzu-Chuan, Lin
+
+## 📄 License
+
+This project is provided for academic and educational use only. You may extend or modify it freely.
